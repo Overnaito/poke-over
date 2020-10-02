@@ -6,13 +6,17 @@ const randomPokemon = async function() {
 }
 
 const getPokemon = async function(number){
-  if(isNaN(number) === false){
-    throw new SyntaxError('The function parameter must be a dex number of a Pokemon')
-  } else if(!number){
+  if(!number){
+    throw new SyntaxError('You must put a number as the function parameter, it must be a dex number of a Pokemon, from 1 to 811')
+  }
+  if(isNaN(number)){
     throw new SyntaxError('The function parameter must be a dex number of a Pokemon')
   } else if(number <= 0){
     throw new SyntaxError('The function parameter must be a dex number of a Pokemon, Minimum 1')
-  }
+  } else if(number >= 812){
+    throw new SyntaxError('The maximum number is 811')
+  } else if(typeof number === 'string') parseInt(number)
+  
   const fetch = require('node-fetch')
   const res = await fetch('https://serenachan.glitch.me/api/pokemon')
   const data = await res.json()
