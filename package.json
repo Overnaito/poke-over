@@ -1,6 +1,6 @@
 {
   "name": "poke-over",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Pokemon package to simplify the use of my Pokemon API",
   "main": "src/index.js",
   "scripts": {
