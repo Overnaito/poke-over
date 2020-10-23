@@ -1,6 +1,6 @@
 const randomPokemon = async function() {
   const fetch = require('node-fetch')
-  const res = await fetch('https://serenachan.glitch.me/api/pokemon/random')
+  const res = await fetch('https://poke-over.glitch.me/api/pokemon/random')
   const data = await res.json()
   return data;
 }
@@ -18,14 +18,14 @@ const getPokemon = async function(number){
   } else if(typeof number === 'string') parseInt(number)
   
   const fetch = require('node-fetch')
-  const res = await fetch('https://serenachan.glitch.me/api/pokemon')
+  const res = await fetch('https://poke-over.glitch.me/api/pokemon')
   const data = await res.json()
   return data[number];
 }
 
 const allPokemon = async function(){
   const fetch = require('node-fetch')
-  const res = await fetch('https://serenachan.glitch.me/api/pokemon')
+  const res = await fetch('https://poke-over.glitch.me/api/pokemon')
   const data = await res.json()
   return data;
 }

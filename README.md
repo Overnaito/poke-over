@@ -1,7 +1,7 @@
 # poke-over
 A Pokemon Package to simplify the use of my Pokemon API
 
-[API](https://serenachan.glitch.me/api)
+[API](https://poke-over.glitch.me/api)
 
 ## What i can do?
 You can do many things with enough imagination and creativity; 
@@ -27,7 +27,7 @@ As the name indicates, it returns a JSON of a Random Pokemon, the JSON includes 
 
       const over = require('poke-over')
       over.randomPokemon().then(random => {
-        random // same here
+        random
       })
 
 Returns:
@@ -52,7 +52,7 @@ This method receives a parameter of a number from 1 to 811, for example to get B
 
       const over = require('poke-over')
       over.getPokemon(1).then(get => {
-        get // same here
+        get
       })
 
 Returns:
@@ -76,11 +76,11 @@ This method is for very specific things because it returns a JSON of an Array of
 
       const over = require('poke-over')
       over.allPokemon().then(all => {
-        all // same here
+        all 
       })
 
 Returns:
 
       /* 
-      For obvious reasons I can't put what it returns but you can see it at https://serenachan.glitch.me/api/pokemon
+      For obvious reasons I can't put what it returns but you can see it at https://poke-over.glitch.me/api/pokemon
       */
